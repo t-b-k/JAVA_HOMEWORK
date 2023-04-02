@@ -11,6 +11,8 @@ import static jdk.internal.org.objectweb.asm.Opcodes.NULL;
 // результат после каждой итерации запишите в лог-файл.
 public class BubbleSorterByIncrease {
 
+    private static final Logger LOG = MyLog.myLog(BubbleSorterByIncrease.class.getName());
+
     public static int[] inputArrayOfIntegersByOne (int arrayLength) {
         int[] array = new int[arrayLength];
         Scanner scan = new Scanner(System.in);
@@ -27,15 +29,15 @@ public class BubbleSorterByIncrease {
 //    public static void
     public static void bubbleSortByIncrease (int[] array) {
         int length = array.length;
-        Logger logger = Logger.getLogger(BubbleSorterByIncrease.class.getName());
-        FileHandler fh = null;
-        try {
-            fh = new FileHandler("bubbleLog.txt");
-        } catch (IOException e) {
-            logger.log(Level.INFO, "ERROR: Couldn't create log file");
-            throw new RuntimeException(e);
-        }
-        logger.addHandler(fh);
+//        Logger logger = Logger.getLogger(BubbleSorterByIncrease.class.getName());
+//        FileHandler fh = null;
+//        try {
+//            fh = new FileHandler("bubbleLog.txt");
+//        } catch (IOException e) {
+//            logger.log(Level.INFO, "ERROR: Couldn't create log file");
+//            throw new RuntimeException(e);
+//        }
+//        logger.addHandler(fh);
 //        fh.setFormatter();
         if (length != 0) {
             for (int i = length - 1; i > 0; i--) {
@@ -52,7 +54,7 @@ public class BubbleSorterByIncrease {
                 }
                 stringToOutput.deleteCharAt(stringToOutput.length()-1);
                 stringToOutput.append("]");
-                logger.log(Level.INFO, stringToOutput.toString());
+                LOG.log(Level.INFO, stringToOutput.toString());
             }
         } else {
             System.out.println("Массив пуст.");
