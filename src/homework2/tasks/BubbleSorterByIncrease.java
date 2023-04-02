@@ -4,6 +4,7 @@ import java.util.Scanner;
 import java.util.logging.FileHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.logging.SimpleFormatter;
 
 import static jdk.internal.org.objectweb.asm.Opcodes.NULL;
 
@@ -30,15 +31,17 @@ public class BubbleSorterByIncrease {
     public static void bubbleSortByIncrease (int[] array) {
         int length = array.length;
 //        Logger logger = Logger.getLogger(BubbleSorterByIncrease.class.getName());
-//        FileHandler fh = null;
-//        try {
-//            fh = new FileHandler("bubbleLog.txt");
-//        } catch (IOException e) {
-//            logger.log(Level.INFO, "ERROR: Couldn't create log file");
-//            throw new RuntimeException(e);
-//        }
-//        logger.addHandler(fh);
-//        fh.setFormatter();
+        FileHandler fh = null;
+        try {
+            fh = new FileHandler("myLogFile.txt");
+        } catch (IOException e) {
+            LOG.log(Level.INFO, "ERROR: Couldn't create log file");
+            throw new RuntimeException(e);
+        }
+        LOG.addHandler(fh);
+        SimpleFormatter sFormat = new SimpleFormatter();
+        fh.setFormatter(sFormat);
+
         if (length != 0) {
             for (int i = length - 1; i > 0; i--) {
                 StringBuilder stringToOutput = new StringBuilder("[");

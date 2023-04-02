@@ -1,0 +1,18 @@
+апр. 02, 2023 4:35:07 PM homework2.tasks.BubbleSorterByIncrease bubbleSortByIncrease
+INFO: [-100 -99 -89 -78 -56 -76 77 65 45 345]
+апр. 02, 2023 4:35:07 PM homework2.tasks.BubbleSorterByIncrease bubbleSortByIncrease
+INFO: [-100 -99 -89 -78 -76 -56 65 45 77 345]
+апр. 02, 2023 4:35:07 PM homework2.tasks.BubbleSorterByIncrease bubbleSortByIncrease
+INFO: [-100 -99 -89 -78 -76 -56 45 65 77 345]
+апр. 02, 2023 4:35:07 PM homework2.tasks.BubbleSorterByIncrease bubbleSortByIncrease
+INFO: [-100 -99 -89 -78 -76 -56 45 65 77 345]
+апр. 02, 2023 4:35:07 PM homework2.tasks.BubbleSorterByIncrease bubbleSortByIncrease
+INFO: [-100 -99 -89 -78 -76 -56 45 65 77 345]
+апр. 02, 2023 4:35:07 PM homework2.tasks.BubbleSorterByIncrease bubbleSortByIncrease
+INFO: [-100 -99 -89 -78 -76 -56 45 65 77 345]
+апр. 02, 2023 4:35:07 PM homework2.tasks.BubbleSorterByIncrease bubbleSortByIncrease
+INFO: [-100 -99 -89 -78 -76 -56 45 65 77 345]
+апр. 02, 2023 4:35:07 PM homework2.tasks.BubbleSorterByIncrease bubbleSortByIncrease
+INFO: [-100 -99 -89 -78 -76 -56 45 65 77 345]
+апр. 02, 2023 4:35:07 PM homework2.tasks.BubbleSorterByIncrease bubbleSortByIncrease
+INFO: [-100 -99 -89 -78 -76 -56 45 65 77 345]

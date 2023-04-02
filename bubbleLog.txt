@@ -8,7 +8,7 @@
   <sequence>0</sequence>
   <logger>homework2.tasks.BubbleSorterByIncrease</logger>
   <level>INFO</level>
-  <class>homework2.tasks.BubbleSorterByIncrease</class>
+  <class>homework2.tasks.BubbleSorterByIncrease</class>q
   <method>bubbleSortByIncrease</method>
   <thread>1</thread>
   <message>[-90 1 -5 0 4 5 1 78 -3 234]</message>
