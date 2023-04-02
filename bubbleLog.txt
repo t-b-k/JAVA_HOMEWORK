@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-04-02T08:43:31.739568600Z</date>
+  <millis>1680425011739</millis>
+  <nanos>568600</nanos>
+  <sequence>0</sequence>
+  <logger>homework2.tasks.BubbleSorterByIncrease</logger>
+  <level>INFO</level>
+  <class>homework2.tasks.BubbleSorterByIncrease</class>
+  <method>bubbleSortByIncrease</method>
+  <thread>1</thread>
+  <message>[34 45 4 5 7 3 5 7 5 65]</message>
+</record>
+<record>
+  <date>2023-04-02T08:43:31.770811700Z</date>
+  <millis>1680425011770</millis>
+  <nanos>811700</nanos>
+  <sequence>1</sequence>
+  <logger>homework2.tasks.BubbleSorterByIncrease</logger>
+  <level>INFO</level>
+  <class>homework2.tasks.BubbleSorterByIncrease</class>
+  <method>bubbleSortByIncrease</method>
+  <thread>1</thread>
+  <message>[34 4 5 7 3 5 7 5 45 65]</message>
+</record>
+<record>
+  <date>2023-04-02T08:43:31.770811700Z</date>
+  <millis>1680425011770</millis>
+  <nanos>811700</nanos>
+  <sequence>2</sequence>
+  <logger>homework2.tasks.BubbleSorterByIncrease</logger>
+  <level>INFO</level>
+  <class>homework2.tasks.BubbleSorterByIncrease</class>
+  <method>bubbleSortByIncrease</method>
+  <thread>1</thread>
+  <message>[4 5 7 3 5 7 5 34 45 65]</message>
+</record>
+<record>
+  <date>2023-04-02T08:43:31.770811700Z</date>
+  <millis>1680425011770</millis>
+  <nanos>811700</nanos>
+  <sequence>3</sequence>
+  <logger>homework2.tasks.BubbleSorterByIncrease</logger>
+  <level>INFO</level>
+  <class>homework2.tasks.BubbleSorterByIncrease</class>
+  <method>bubbleSortByIncrease</method>
+  <thread>1</thread>
+  <message>[4 5 3 5 7 5 7 34 45 65]</message>
+</record>
+<record>
+  <date>2023-04-02T08:43:31.770811700Z</date>
+  <millis>1680425011770</millis>
+  <nanos>811700</nanos>
+  <sequence>4</sequence>
+  <logger>homework2.tasks.BubbleSorterByIncrease</logger>
+  <level>INFO</level>
+  <class>homework2.tasks.BubbleSorterByIncrease</class>
+  <method>bubbleSortByIncrease</method>
+  <thread>1</thread>
+  <message>[4 3 5 5 5 7 7 34 45 65]</message>
+</record>
+<record>
+  <date>2023-04-02T08:43:31.770811700Z</date>
+  <millis>1680425011770</millis>
+  <nanos>811700</nanos>
+  <sequence>5</sequence>
+  <logger>homework2.tasks.BubbleSorterByIncrease</logger>
+  <level>INFO</level>
+  <class>homework2.tasks.BubbleSorterByIncrease</class>
+  <method>bubbleSortByIncrease</method>
+  <thread>1</thread>
+  <message>[3 4 5 5 5 7 7 34 45 65]</message>
+</record>
+<record>
+  <date>2023-04-02T08:43:31.770811700Z</date>
+  <millis>1680425011770</millis>
+  <nanos>811700</nanos>
+  <sequence>6</sequence>
+  <logger>homework2.tasks.BubbleSorterByIncrease</logger>
+  <level>INFO</level>
+  <class>homework2.tasks.BubbleSorterByIncrease</class>
+  <method>bubbleSortByIncrease</method>
+  <thread>1</thread>
+  <message>[3 4 5 5 5 7 7 34 45 65]</message>
+</record>
+<record>
+  <date>2023-04-02T08:43:31.770811700Z</date>
+  <millis>1680425011770</millis>
+  <nanos>811700</nanos>
+  <sequence>7</sequence>
+  <logger>homework2.tasks.BubbleSorterByIncrease</logger>
+  <level>INFO</level>
+  <class>homework2.tasks.BubbleSorterByIncrease</class>
+  <method>bubbleSortByIncrease</method>
+  <thread>1</thread>
+  <message>[3 4 5 5 5 7 7 34 45 65]</message>
+</record>
+<record>
+  <date>2023-04-02T08:43:31.770811700Z</date>
+  <millis>1680425011770</millis>
+  <nanos>811700</nanos>
+  <sequence>8</sequence>
+  <logger>homework2.tasks.BubbleSorterByIncrease</logger>
+  <level>INFO</level>
+  <class>homework2.tasks.BubbleSorterByIncrease</class>
+  <method>bubbleSortByIncrease</method>
+  <thread>1</thread>
+  <message>[3 4 5 5 5 7 7 34 45 65]</message>
+</record>
+</log>

@@ -1,5 +1,9 @@
 package homework2.tasks;
+import java.io.IOException;
 import java.util.Scanner;
+import java.util.logging.FileHandler;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import static jdk.internal.org.objectweb.asm.Opcodes.NULL;
 
@@ -23,9 +27,19 @@ public class BubbleSorterByIncrease {
 //    public static void
     public static void bubbleSortByIncrease (int[] array) {
         int length = array.length;
-//        Logger logger = Logger.getLogger();
+        Logger logger = Logger.getLogger(BubbleSorterByIncrease.class.getName());
+        FileHandler fh = null;
+        try {
+            fh = new FileHandler("bubbleLog.txt");
+        } catch (IOException e) {
+            logger.log(Level.INFO, "ERROR: Couldn't create log file");
+            throw new RuntimeException(e);
+        }
+        logger.addHandler(fh);
+//        fh.setFormatter();
         if (length != 0) {
             for (int i = length - 1; i > 0; i--) {
+                StringBuilder stringToOutput = new StringBuilder("[");
                 for (int j = 0; j < i; j++) {
                     if (array[j] > array[j + 1]) {
                         int temp = array[j];
@@ -33,6 +47,12 @@ public class BubbleSorterByIncrease {
                         array[j + 1] = temp;
                     }
                 }
+                for (int elem: array) {
+                    stringToOutput.append(elem + " ");
+                }
+                stringToOutput.deleteCharAt(stringToOutput.length()-1);
+                stringToOutput.append("]");
+                logger.log(Level.INFO, stringToOutput.toString());
             }
         } else {
             System.out.println("Массив пуст.");
