@@ -1,5 +1,11 @@
 package homework2.tasks;
 
+import static homework2.Main.*;
+
+// Дана строка json:
+// [{"фамилия":"Иванов","оценка":"5","предмет":"Математика"}, {"фамилия":"Петрова","оценка":"4","предмет":"Информатика"},
+// {"фамилия":"Краснов","оценка":"5","предмет":"Физика"}]
+// Написать метод, который распарсит этот текст и, используя StringBuilder, создаст строки вида:
 public class JsonToReadableTextWriter {
 
     public static String[] convertJsonToStringArray (String jsonString) {
@@ -19,11 +25,11 @@ public class JsonToReadableTextWriter {
         }
         int index = 0;
         for (StringBuilder personInfo : tempArray) {
-            personInfo.replace(0,12, "Студент ");
+            personInfo.replace(0,"[{\"".length()+KEY1.length()+"\":\"".length()+1, "Студент ");
             index = personInfo.indexOf("\"");
-            personInfo.replace(index, index+2+"оценка".length()+4, " получил ");
+            personInfo.replace(index, (index-1)+"\",\"".length()+KEY2.length()+"\":\"".length()+1, " получил ");
             index = personInfo.indexOf("\"");
-            personInfo.replace(index, index+2+"предмет".length()+4, " по предмету ");
+            personInfo.replace(index, (index-1)+"\",\"".length()+KEY3.length()+"\":\"".length()+1, " по предмету ");
             index = personInfo.indexOf("\"");
             personInfo.delete(index, personInfo.length());
         }
