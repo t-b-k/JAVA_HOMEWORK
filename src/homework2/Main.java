@@ -13,17 +13,17 @@ public class Main {
     public static final String KEY3 = "предмет";
 
     public static void main(String[] args) {
-//        int[] sortedArray = inputArrayOfIntegersByOne(LENGTH);
-//        System.out.println("ИСХОДНЫЙ МАССИВ: ");
-//        outputArrayOfIntToConsole(sortedArray);
-//        bubbleSortByIncrease(sortedArray);
-//        System.out.println("\nРЕЗУЛЬТАТ СОРТИРОВКИ: ");
-//        outputArrayOfIntToConsole(sortedArray);
+        int[] sortedArray = inputArrayOfIntegersByOne(LENGTH);
+        System.out.println("ИСХОДНЫЙ МАССИВ: ");
+        outputArrayOfIntToConsole(sortedArray);
+        bubbleSortByIncrease(sortedArray);
+        System.out.println("\nРЕЗУЛЬТАТ СОРТИРОВКИ: ");
+        outputArrayOfIntToConsole(sortedArray);
 
-        String[] gotFromJasonString = convertJsonToStringArray(JSONSTRING);
-        for (String item: gotFromJasonString) {
-            System.out.println(item);
-        }
+//        String[] gotFromJasonString = convertJsonToStringArray(JSONSTRING);
+//        for (String item: gotFromJasonString) {
+//            System.out.println(item);
+//        }
     }
 
 

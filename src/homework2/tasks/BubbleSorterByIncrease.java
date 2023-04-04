@@ -1,5 +1,6 @@
 package homework2.tasks;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.Scanner;
 import java.util.logging.FileHandler;
 import java.util.logging.Level;
@@ -30,17 +31,18 @@ public class BubbleSorterByIncrease {
 //    public static void
     public static void bubbleSortByIncrease (int[] array) {
         int length = array.length;
+        LOG.log(Level.INFO, "Начальный массив" + Arrays.toString(array));
 //        Logger logger = Logger.getLogger(BubbleSorterByIncrease.class.getName());
-        FileHandler fh = null;
-        try {
-            fh = new FileHandler("myLogFile.txt");
-        } catch (IOException e) {
-            LOG.log(Level.INFO, "ERROR: Couldn't create log file");
-            throw new RuntimeException(e);
-        }
-        LOG.addHandler(fh);
-        SimpleFormatter sFormat = new SimpleFormatter();
-        fh.setFormatter(sFormat);
+//        FileHandler fh = null;
+//        try {
+//            fh = new FileHandler("myLogFile.txt");
+//        } catch (IOException e) {
+//            LOG.log(Level.INFO, "ERROR: Couldn't create log file");
+//            throw new RuntimeException(e);
+//        }
+//        LOG.addHandler(fh);
+//        SimpleFormatter sFormat = new SimpleFormatter();
+//        fh.setFormatter(sFormat);
 
         if (length != 0) {
             for (int i = length - 1; i > 0; i--) {
@@ -62,6 +64,7 @@ public class BubbleSorterByIncrease {
         } else {
             System.out.println("Массив пуст.");
         }
+        LOG.log(Level.INFO, "Конечный массив" + Arrays.toString(array));
     }
 
     public static void outputArrayOfIntToConsole (int[] array) {
