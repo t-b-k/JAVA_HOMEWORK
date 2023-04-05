@@ -16,3 +16,25 @@ INFO: [-100 -99 -89 -78 -76 -56 45 65 77 345]
 INFO: [-100 -99 -89 -78 -76 -56 45 65 77 345]
 апр. 02, 2023 4:35:07 PM homework2.tasks.BubbleSorterByIncrease bubbleSortByIncrease
 INFO: [-100 -99 -89 -78 -76 -56 45 65 77 345]
+апр. 05, 2023 2:50:23 PM homework2.Main main
+INFO: ИСХОДНЫЙ МАССИВ: [34, -234, 34, 0, 15, -7, 5, 40, -34, 32]
+апр. 05, 2023 2:50:23 PM homework2.tasks.BubbleSorterByIncrease bubbleSortByIncrease
+INFO: [-234 34 0 15 -7 5 34 -34 32 40]
+апр. 05, 2023 2:50:23 PM homework2.tasks.BubbleSorterByIncrease bubbleSortByIncrease
+INFO: [-234 0 15 -7 5 34 -34 32 34 40]
+апр. 05, 2023 2:50:23 PM homework2.tasks.BubbleSorterByIncrease bubbleSortByIncrease
+INFO: [-234 0 -7 5 15 -34 32 34 34 40]
+апр. 05, 2023 2:50:23 PM homework2.tasks.BubbleSorterByIncrease bubbleSortByIncrease
+INFO: [-234 -7 0 5 -34 15 32 34 34 40]
+апр. 05, 2023 2:50:23 PM homework2.tasks.BubbleSorterByIncrease bubbleSortByIncrease
+INFO: [-234 -7 0 -34 5 15 32 34 34 40]
+апр. 05, 2023 2:50:23 PM homework2.tasks.BubbleSorterByIncrease bubbleSortByIncrease
+INFO: [-234 -7 -34 0 5 15 32 34 34 40]
+апр. 05, 2023 2:50:23 PM homework2.tasks.BubbleSorterByIncrease bubbleSortByIncrease
+INFO: [-234 -34 -7 0 5 15 32 34 34 40]
+апр. 05, 2023 2:50:23 PM homework2.tasks.BubbleSorterByIncrease bubbleSortByIncrease
+INFO: [-234 -34 -7 0 5 15 32 34 34 40]
+апр. 05, 2023 2:50:23 PM homework2.tasks.BubbleSorterByIncrease bubbleSortByIncrease
+INFO: [-234 -34 -7 0 5 15 32 34 34 40]
+апр. 05, 2023 2:50:23 PM homework2.Main main
+INFO: Результат сортировки: [-234, -34, -7, 0, 5, 15, 32, 34, 34, 40]
