@@ -10,7 +10,7 @@ public class JsonToReadableTextWriter {
 
     public static String[] convertJsonToStringArray (String jsonString) {
         String[] arrayOfStrings = new String[0];
-        System.out.println("Разбили строку .json на массив строк-записей: ");
+        System.out.println("Разбили строку .json на массив строк-записей по пробелу: ");
         arrayOfStrings = jsonString.split(" ");
         for (String item: arrayOfStrings) {
             System.out.println(item);
@@ -24,6 +24,7 @@ public class JsonToReadableTextWriter {
             tempArray[i].append(arrayOfStrings[i]);
         }
         int index = 0;
+        // Преобразуем строки в массиве StringBuilder'ов к требуемому виду:
         for (StringBuilder personInfo : tempArray) {
             personInfo.replace(0,"[{\"".length()+KEY1.length()+"\":\"".length()+1, "Студент ");
             index = personInfo.indexOf("\"");

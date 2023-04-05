@@ -22,6 +22,8 @@ public class Main {
     public static final String KEY3 = "предмет";
 
     public static void main(String[] args) {
+
+// ПЕРВАЯ ЗАДАЧА
         int[] sortedArray = inputArrayOfIntegersByOne(LENGTH);
 //        System.out.println("ИСХОДНЫЙ МАССИВ: ");
 //        outputArrayOfIntToConsole(sortedArray);
@@ -31,11 +33,10 @@ public class Main {
 //        outputArrayOfIntToConsole(sortedArray);
         LOG.log(Level.INFO, "Результат сортировки: "+ Arrays.toString(sortedArray));
 
-//        String[] gotFromJasonString = convertJsonToStringArray(JSONSTRING);
-//        for (String item: gotFromJasonString) {
-//            System.out.println(item);
-//        }
+// ВТОРАЯ ЗАДАЧА:
+        String[] gotFromJasonString = convertJsonToStringArray(JSONSTRING);
+        for (String item: gotFromJasonString) {
+            System.out.println(item);
+        }
     }
-
-
 }
