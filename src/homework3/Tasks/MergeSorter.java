@@ -4,38 +4,17 @@ public class MergeSorter {
 
     public static int[] incrementalSortOfIntegersByMerge(int[] sourceArray) {
         int numOfElements = sourceArray.length;
-        System.out.println("\nnumOfElements = "+numOfElements+"\n");
         int[] resultArray;
 
         if (numOfElements == 1) {
             resultArray = copyFromArray(sourceArray, 0, 0);
-            printArrayOfInt(resultArray);
-//        }
-//        } else if (numOfElements == 2) {
-//            resultArray = new int[2];
-//            if (sourceArray[0] > sourceArray[1]) {
-//                resultArray[0] = sourceArray[1];
-//                resultArray[1] = sourceArray[0];
-//            }
-//            else {
-//                resultArray[0] = sourceArray[0];
-//                resultArray[1] = sourceArray[1];
-//            }
-//            printArrayOfInt(resultArray);
         } else {
                 int equator = (int) (numOfElements/2); // 1
-                int[] leftArray;
-                leftArray = copyFromArray(sourceArray, 0, equator-1);
-                int[] rightArray;
-                rightArray = copyFromArray(sourceArray, equator, numOfElements-1);
+                int[] leftArray = copyFromArray(sourceArray, 0, equator-1);
+                int[] rightArray= copyFromArray(sourceArray, equator, numOfElements-1);
 
-                System.out.print("Left array = ");
-                printArrayOfInt(leftArray);
-                System.out.print("\nRight array = ");
-                printArrayOfInt(rightArray);
-                resultArray = incrementalMerge(incrementalSortOfIntegersByMerge(leftArray), incrementalSortOfIntegersByMerge(rightArray));
-                printArrayOfInt(resultArray);
-               // resultArray = incrementalMerge(sortedLeftArray, sortedRightArray);
+                resultArray = incrementalMerge(incrementalSortOfIntegersByMerge(leftArray),
+                        incrementalSortOfIntegersByMerge(rightArray));
         }
         return resultArray;
     }
