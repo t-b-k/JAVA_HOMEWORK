@@ -11,13 +11,20 @@ public class LinkedListCreator {
         String nextString;
         LinkedList<String> resultList = new LinkedList<>();
         System.out.println("Вводите строки для формирования списка строк (по одной, через Enter).");
-        System.out.println("Для завершения введите 'Q' в любом регистре.\n");
+        System.out.println("Для завершения введите 'Q' в любом регистре.");
         System.out.print("====> ");
-        nextString = scan.toString();
+        nextString = scan.nextLine();
+        Boolean goOn = true;
 
-        while (nextString.toLowerCase() != "q\n") {
-            resultList.add(nextString);
+        while (goOn) {
+            if ("q".equals(nextString.toLowerCase()) | "".equals(nextString.toLowerCase())) {
+                goOn = false;
+            } else {
+                resultList.add(nextString);
+                System.out.print("====> ");
+                nextString = scan.nextLine();
             }
+        }
         scan.close();
         return resultList;
     }
