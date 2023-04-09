@@ -1,6 +1,7 @@
 package homework4;
 
 import homework4.tasks.MyLogInHMW4;
+import homework4.tasks.QueueViaLinkedList;
 import org.w3c.dom.ls.LSOutput;
 
 import java.util.LinkedList;
@@ -19,13 +20,30 @@ public class Main {
 
     public static void main(String[] args) {
 
-        LOG.log(Level.INFO, "1-я задача. Вывести в обратном порядке заданный пользователем список строк. ");
-        LinkedList<String> userListOfStrings = StringsLinkedListCreatorFromConsole();
-        LOG.log(Level.INFO, "Пользователь ввел следующую последовательность строк: ");
-        printLinkedListToLog(userListOfStrings);
-        LinkedList<String> invertedUserListOfStrings = invertLinkedListOfStrings (userListOfStrings);
-        LOG.log(Level.INFO, "ПЕРЕВЕРНУТАЯ ПОСЛЕДОВАТЕЛЬНОСТЬ СТРОК : ");
-        printLinkedListToLog(invertedUserListOfStrings);
-    }
+//        LOG.log(Level.INFO, "1-я задача. Вывести в обратном порядке заданный пользователем список строк. ");
+//        LinkedList<String> userListOfStrings = StringsLinkedListCreatorFromConsole();
+//        LOG.log(Level.INFO, "Пользователь ввел следующую последовательность строк: ");
+//        printLinkedListToLog(userListOfStrings);
+//        LinkedList<String> invertedUserListOfStrings = invertLinkedListOfStrings (userListOfStrings);
+//        LOG.log(Level.INFO, "ПЕРЕВЕРНУТАЯ ПОСЛЕДОВАТЕЛЬНОСТЬ СТРОК : ");
+//        printLinkedListToLog(invertedUserListOfStrings);
 
+        QueueViaLinkedList ourQueue = new QueueViaLinkedList();
+        ourQueue.enqueue("123");
+        System.out.println("Добавили элемент" + ourQueue.lastInQueue());
+        ourQueue.enqueue("очень");
+        System.out.println("Добавили элемент" + ourQueue.lastInQueue());
+        ourQueue.enqueue("трудная");
+        System.out.println("Добавили элемент" + ourQueue.lastInQueue());
+        ourQueue.enqueue("домашка");
+        System.out.println("Добавили элемент" + ourQueue.lastInQueue());
+        ourQueue.enqueue("для");
+        System.out.println("Добавили элемент" + ourQueue.lastInQueue());
+        ourQueue.enqueue("новичков");
+        System.out.println("Добавили элемент" + ourQueue.lastInQueue());
+
+        System.out.println("Удаляем первый элемент" + ourQueue.dequeue());
+        System.out.println("Теперь первым является" + ourQueue.firstInQueue());
+    }
 }
+

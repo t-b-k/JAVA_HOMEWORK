@@ -22,17 +22,35 @@ public class QueueViaLinkedList {
 
     // Метод dequeue возвращает первый элемент из очереди и удаляет его
     public String dequeue () {
-        String firstElement = ourQueue.getFirst();
-        ourQueue.removeFirst();
-        return firstElement;
+        String firstElement;
+        if (!ourQueue.isEmpty()) {
+            firstElement = ourQueue.getFirst();
+            ourQueue.removeFirst();
+            return firstElement;
+        } else {
+            return null;
+        }
     }
 
-    // Метод first возвращает первый элемент из очереди, не удаляя его
-    public String first () {
-        String firstElement = ourQueue.getFirst();
-        return firstElement;
+    // Метод firstInQueue возвращает первый элемент из очереди, не удаляя его
+    public String firstInQueue () {
+        String firstElement;
+        if (!ourQueue.isEmpty()) {
+            firstElement = ourQueue.getFirst();
+            return firstElement;
+        } else {
+            return null;
+        }
     }
-
-
-
+    // Метод lastInQueue возвращает последний элемент в очереди, не удаляя его
+    public String lastInQueue () {
+        String lastElement;
+        if (!ourQueue.isEmpty()) {
+            lastElement = ourQueue.getLast();
+            return lastElement;
+        } else {
+            return null;
+        }
+    }
 }
+
