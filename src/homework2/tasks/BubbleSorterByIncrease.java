@@ -27,7 +27,7 @@ public class BubbleSorterByIncrease {
         return array;
     }
 
-//    public static void
+    //    public static void
     public static void bubbleSortByIncrease (int[] array) {
         int length = array.length;
 //        Logger logger = Logger.getLogger(BubbleSorterByIncrease.class.getName());

@@ -15,8 +15,8 @@ public class Main {
     private static final Logger LOG = MyLog.myLog(Main.class.getName());
     public static final int LENGTH = 10;
     public static final String JSONSTRING = "[{\"фамилия\":\"Иванов\",\"оценка\":\"5\",\"предмет\":\"Математика\"}, " +
-                                            "{\"фамилия\":\"Петрова\",\"оценка\":\"4\",\"предмет\":\"Информатика\"}, " +
-                                            "{\"фамилия\":\"Краснов\",\"оценка\":\"5\",\"предмет\":\"Физика\"}]";
+            "{\"фамилия\":\"Петрова\",\"оценка\":\"4\",\"предмет\":\"Информатика\"}, " +
+            "{\"фамилия\":\"Краснов\",\"оценка\":\"5\",\"предмет\":\"Физика\"}]";
     public static final String KEY1 = "фамилия";
     public static final String KEY2 = "оценка";
     public static final String KEY3 = "предмет";
