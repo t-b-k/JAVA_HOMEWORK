@@ -55,6 +55,5 @@ public class PhoneBookViaHashMap {
             System.out.print(phoneNumbers.get(i) + "; ");
         }
         System.out.print(phoneNumbers.get(i) + "\n");
-        }
     }
 }
