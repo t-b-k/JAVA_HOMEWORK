@@ -16,17 +16,17 @@ import static homework4.tasks.LinkedListLogger.printLinkedListToLog;
 
 public class Main {
     // Создадим логгер для записи результатов работы методов из домашнего задания
-    private static final Logger LOG = MyLogInHMW4.myLog(homework2.Main.class.getName());
+    private static final Logger LOG = MyLogInHMW4.myLog(homework4.Main.class.getName());
 
     public static void main(String[] args) {
 
-//        LOG.log(Level.INFO, "1-я задача. Вывести в обратном порядке заданный пользователем список строк. ");
-//        LinkedList<String> userListOfStrings = StringsLinkedListCreatorFromConsole();
-//        LOG.log(Level.INFO, "Пользователь ввел следующую последовательность строк: ");
-//        printLinkedListToLog(userListOfStrings);
-//        LinkedList<String> invertedUserListOfStrings = invertLinkedListOfStrings (userListOfStrings);
-//        LOG.log(Level.INFO, "ПЕРЕВЕРНУТАЯ ПОСЛЕДОВАТЕЛЬНОСТЬ СТРОК : ");
-//        printLinkedListToLog(invertedUserListOfStrings);
+        LOG.log(Level.INFO, "1-я задача. Вывести в обратном порядке заданный пользователем список строк. ");
+        LinkedList<String> userListOfStrings = StringsLinkedListCreatorFromConsole();
+        LOG.log(Level.INFO, "Пользователь ввел следующую последовательность строк: ");
+        printLinkedListToLog(userListOfStrings);
+        LinkedList<String> invertedUserListOfStrings = invertLinkedListOfStrings (userListOfStrings);
+        LOG.log(Level.INFO, "ПЕРЕВЕРНУТАЯ ПОСЛЕДОВАТЕЛЬНОСТЬ СТРОК : ");
+        printLinkedListToLog(invertedUserListOfStrings);
 
         QueueViaLinkedList ourQueue = new QueueViaLinkedList();
         ourQueue.enqueue("123");
